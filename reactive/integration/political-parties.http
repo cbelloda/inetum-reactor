@@ -1,0 +1,4 @@
+@electoralDistrict = 140101
+GET {{host}}api/jne/political/parties/{{electoralDistrict}} HTTP/1.1
+content-type: application/json
+

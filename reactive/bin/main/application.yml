@@ -1,0 +1,27 @@
+server:
+  port: 9091
+  servlet:
+    context-path: /ms-get-data-jne/partidos-politicos/v1
+
+spring:
+  application:
+    name: ms-get-data-jne-v1
+  main:
+    allow-bean-definition-overriding: true
+
+api:
+  jne:
+    base:
+      url: https://plataformaelectoral.jne.gob.pe
+      path: /Candidato/GetExpedientesLista/{electoralDistrict}
+webclient:
+  connect:
+    time-out.millis: 50000
+  read:
+    time-out.seconds: 50
+  write:
+    time-out.seconds: 50
+
+logging:
+  level:
+    root: INFO

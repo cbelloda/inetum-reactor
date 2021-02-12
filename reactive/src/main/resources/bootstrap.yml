@@ -1,0 +1,17 @@
+application:
+  ecnf:
+    api:
+      path: /
+
+spring:
+  application:
+    name: ms-get-data-jne-v1
+  main:
+    allow-bean-definition-overriding: true
+
+
+management:
+  endpoints:
+    web:
+      base-path: /
+
